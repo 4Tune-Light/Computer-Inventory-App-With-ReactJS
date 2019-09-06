@@ -1,0 +1,34 @@
+.user-form {
+	background-color: white;
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 2rem;
+}
+
+.centering {
+	padding: 4rem 30%;
+	box-sizing: border-box;
+}
+
+.img-height {
+	max-height: 180px
+}
+
+.img-center {
+	text-align: center;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+.bgImg {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqWzDAUTJqexE9uLo_9_RmKm7TLl8j-6PAU5ISPNbP6tzq9Iltlw');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#Password {
+	-webkit-text-security: disc;
+}

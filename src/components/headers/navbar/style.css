@@ -1,0 +1,32 @@
+#navbar {
+	background-color: #3AC8F8;
+	transition: margin-left .5s;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0.5rem;
+	font-style: tahoma;
+}
+
+#search {
+	float: right;
+}
+
+.btn-primary {
+	background-color: blue;
+}
+
+.btn-primary:hover {
+	background-color: rgba(0, 0, 139, 0.8);
+}
+
+#btnLogout {
+	color: white;
+	border: none;
+	background-color: transparent;
+	font-weight: bold; 
+}
+
+#btnLogout:hover {
+	text-decoration: underline;
+	color: crimson;
+}

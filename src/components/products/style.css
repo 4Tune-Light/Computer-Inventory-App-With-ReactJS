@@ -1,0 +1,48 @@
+#productsItem {
+	background-color: white;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#singleProducts {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+	margin-top: 2rem;
+	background-color: white;
+	height: 100%;
+} 
+
+#title {
+	background-color: white;
+	padding: 1rem 2.5rem;
+	box-sizing: border-box;
+}
+
+.query {
+	display: inline-block;
+	list-style: none;
+}
+
+.query-item {
+	display: inline-block;
+}
+
+.img-h {
+	max-height: 243px;
+}
+
+.user-form {
+	background-color: white;
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 2rem;
+}
+
+.btnColor {
+	color: #3AC8F8;
+	border-color: #3AC8F8;
+}
+
+.btnColor:hover {
+	color: white;
+	background-color: #3AC8F8;
+	border-color: #3AC8F8;
+}
