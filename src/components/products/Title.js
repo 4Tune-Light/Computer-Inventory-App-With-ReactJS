@@ -65,7 +65,7 @@ class Title extends Component {
 							</select>
 					</div>
 					<div className="col-4">
-						<button className="btn btn-success float-right btn-lg"><Link to="/products/create" style={{color: 'white', textDecoration: 'none'}}>Create Product</Link></button>
+						<Link to="/products/create" style={{color: 'white', textDecoration: 'none'}}><button className="btn btn-success float-right btn-lg">Create Product</button></Link>
 					</div>
 				</div>
 

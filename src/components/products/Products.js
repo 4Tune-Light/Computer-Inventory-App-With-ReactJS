@@ -18,12 +18,14 @@ class Products extends Component {
 			page: '1'
 		},
 		total: 0,
+		isLoading: true
 	}
 
 	componentDidMount() {
 		const {search, sortBy, sort, limit, page} = this.state.query;
 		axios.get(`/api/products?search=${search}&sortBy=${sortBy}&sort=${sort}&limit=${limit}&page=${page}`)
 		.then(res => this.setState({items: res.data.data, total: res.data.total[0].total}))
+		.then(() => this.setState({isLoading: false}))
 		.catch(err => console.log(err))
 	}
 
@@ -39,10 +41,11 @@ class Products extends Component {
 	}
 
 	queryString = (data) => {
-		this.setState({query: data})
+		this.setState({items: [], isLoading: true}, () => this.setState({query: data}))
 		const {search, sortBy, sort, limit, page} = this.state.query;
 		axios.get(`/api/products?search=${search}&sortBy=${sortBy}&sort=${sort}&limit=${limit}&page=${page}`)
-			.then(res => this.setState({items: res.data.data, loading: true}))
+			.then(res => this.setState({items: res.data.data}))
+			.then(() => this.setState({isLoading: false}))
 			.catch(err => console.log(err))
 	}
 
@@ -72,7 +75,7 @@ class Products extends Component {
 				<div id="products" className="row justify-content-md-center">
 					<Title callBack={this.queryString} pagination={pageNum}/>
 					
-
+					{this.state.isLoading && <img className="img-fluid img-size mx-auto" src="https://avanauptown.com/views/site/images/icons/loading.gif" />}
 					{
 						this.state.items.map( item => {
 							return <ProductsItem item={item} key={item.id} delete={this.delete}/>

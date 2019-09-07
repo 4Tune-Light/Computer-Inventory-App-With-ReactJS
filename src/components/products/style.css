@@ -29,6 +29,11 @@
 	max-height: 243px;
 }
 
+.img-size{
+	margin-top: 20%;
+	max-height: 200px;
+}
+
 .user-form {
 	background-color: white;
 	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
@@ -45,4 +50,13 @@
 	color: white;
 	background-color: #3AC8F8;
 	border-color: #3AC8F8;
+}
+
+#products {
+	box-sizing: border-box;
+}
+
+#products.row {
+	margin-right: 0;
+	margin-left: 0;
 }

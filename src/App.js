@@ -17,7 +17,7 @@ function App() {
   axios.defaults.baseURL = 'http://localhost:7000';
   return (
     <Router>
-    <div id="main" style={{padding: '0'}}>
+    <div id="main" className="container-fluid" style={{padding: '0', margin: '0'}}>
     <Switch>
       <Route path="/login" exact component={Login} />
       <Route path="/register" exact component={Register} />
