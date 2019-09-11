@@ -44,7 +44,7 @@ class SingleProducts extends Component {
 				<div className="container-fluid">
 				<div id="singleProducts" className="p-4">
 					<div className="row">
-						<div className="col-4 border-right"><img src={image} className="img-fluid img-h" alt="Something that you would like to buy :)"/></div>
+						<div className="col-4 border-right"><img src={image} className="img-fluid img-h" onError={() => {this.state.item.image = 'https://images.vexels.com/media/users/3/127491/isolated/preview/8cb9767b47a1f58908a132a8df10b748-computer-set-flat-icon-by-vexels.png'; this.forceUpdate()}} alt="Something that you would like to buy :)"/></div>
 						<div className="col-7 m-auto">
 							<h3 className="border-bottom pb-3">{name}</h3>
 							<p>Category: {category}</p>

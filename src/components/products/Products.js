@@ -42,11 +42,7 @@ class Products extends Component {
 
 	queryString = (data) => {
 		this.setState({items: [], isLoading: true}, () => this.setState({query: data}))
-		const {search, sortBy, sort, limit, page} = this.state.query;
-		axios.get(`/api/products?search=${search}&sortBy=${sortBy}&sort=${sort}&limit=${limit}&page=${page}`)
-			.then(res => this.setState({items: res.data.data}))
-			.then(() => this.setState({isLoading: false}))
-			.catch(err => console.log(err))
+		this.componentDidMount()
 	}
 
 	pageNumber = () => {
