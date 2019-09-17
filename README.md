@@ -40,25 +40,22 @@ To install dependencies enter project folder and run following command:
 
 ## Demo Project
 ### Register
-![register](https://user-images.githubusercontent.com/50833200/64964261-e2192880-d8c4-11e9-9e73-befcb58db054.png)
+![Register](https://user-images.githubusercontent.com/52448426/64998212-175b5180-d898-11e9-894b-dd659790c55c.png)
 
 ### Login
-![login](https://user-images.githubusercontent.com/50833200/64964090-98304280-d8c4-11e9-8885-b897e21eb772.png)
+![Login](https://user-images.githubusercontent.com/52448426/64998210-175b5180-d898-11e9-8740-a4afcf53f932.png)
 
 ### Home
-![homepage](https://user-images.githubusercontent.com/50833200/64965521-5c4aac80-d8c7-11e9-9732-9f156ffd7462.png)
-
-### Search Product
-![searchproduct](https://user-images.githubusercontent.com/50833200/64964355-1ee51f80-d8c5-11e9-8aba-12e2ac29e240.png)
+![Home](https://user-images.githubusercontent.com/52448426/64998209-16c2bb00-d898-11e9-913e-261b497fb426.png)
 
 ### Detail Product
-![detailproduct](https://user-images.githubusercontent.com/50833200/64964420-391efd80-d8c5-11e9-83d6-468e5931f48e.png)
+![Product Details](https://user-images.githubusercontent.com/52448426/64998211-175b5180-d898-11e9-92de-5eb85a493cc4.png)
 
 ### Add Product
-![addproduct](https://user-images.githubusercontent.com/50833200/64964463-4fc55480-d8c5-11e9-8309-1413ee022110.png)
+![Add Product](https://user-images.githubusercontent.com/52448426/64998207-16c2bb00-d898-11e9-80d8-2e299b45e695.png)
 
 ### Edit Product
-![editproduct](https://user-images.githubusercontent.com/50833200/64964578-90bd6900-d8c5-11e9-920d-91ede74a8e01.png)
+![Edit Product](https://user-images.githubusercontent.com/52448426/64998208-16c2bb00-d898-11e9-8e9d-c44d4ab5a695.png)
 
 
 
