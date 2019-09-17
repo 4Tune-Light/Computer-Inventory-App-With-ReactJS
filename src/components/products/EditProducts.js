@@ -42,8 +42,12 @@ class EditProducts extends Component {
 
 		const {name, image, id_category, quantity, description} = this.state;
 
-		axios.put('/api/products/' + id, {name, image, id_category, quantity, description}, {headers: {auth: token, username, email}})
+		if (!name || !image || !id_category || !quantity || !description) {
+			alert('All fields required')
+		} else {
+			axios.put('/api/products/' + id, {name, image, id_category, quantity, description}, {headers: {auth: token, username, email}})
 			.then(this.setState({edited: true}))
+		}
 	}
 
 	render() {

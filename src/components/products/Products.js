@@ -29,15 +29,17 @@ class Products extends Component {
 		.catch(err => console.log(err))
 	}
 
-	delete = (id) => {
+	delete = async (id) => {
 		const token = localStorage.getItem('token');
 		const username = localStorage.getItem('username');
 		const email = localStorage.getItem('email');
 
-		axios.delete(`/api/products/${id}`, {headers: {auth: token, username, email}})
+		await axios.delete(`/api/products/${id}`, {headers: {auth: token, username, email}})
 			.catch(err => this.setState({success: true}));
 			
-		this.setState({items: this.state.items.filter(item => item.id !== id)})
+		await this.setState({items: this.state.items.filter(item => item.id !== id)})
+		this.componentDidMount()
+		
 	}
 
 	queryString = (data) => {

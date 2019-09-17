@@ -33,8 +33,12 @@ class CreateProducts extends Component {
 
 		const {name, image, id_category, quantity, description} = this.state;
 
-		axios.post('/api/products', {name, image, id_category, quantity, description}, {headers: {auth: token, username, email}})
+		if (!name || !image || !id_category || !quantity || !description) {
+			alert('All fields required')
+		} else {
+			axios.post('/api/products', {name, image, id_category, quantity, description}, {headers: {auth: token, username, email}})
 			.then(this.postTimer.bind(this))
+		}
 	}
 
 	postTimer = () => {

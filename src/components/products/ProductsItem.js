@@ -18,17 +18,20 @@ class ProductsItem extends Component {
 		const action = e.target.value;
 		axios.patch(`/api/products/${id}`, {action}, {headers: {auth: token, username, email}})
 			.then(res => {
-				if (action === 'add') {
-					this.props.item.quantity += 1;
-					this.setState({quantity: this.props.item.quantity})
-					alert('dah ke tambah');
-				} else {
-					this.props.item.quantity -= 1;
-					this.setState({quantity: this.props.item.quantity})
-					alert('dah ke kurang');
-				}
+				if (res.data.status === 400) {
+					alert(res.data.message)
+					} else {
+						if (action === 'add') {
+							this.props.item.quantity += 1;
+							this.setState({quantity: this.props.item.quantity})
+							alert(res.data.message);
+						} else {
+							this.props.item.quantity -= 1;
+							this.setState({quantity: this.props.item.quantity})
+							alert(res.data.message);
+						}
+					}
 			})
-			.catch(err => console.log(err));
 	}
 
 	render() {
